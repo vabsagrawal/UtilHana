@@ -120,7 +120,7 @@ public class PopulateItemCur {
 	    	conn = p.getConnection();
 	    	//prodConn = p.getProdConnection();
 	    } catch(SQLException e) {
-	    	//System.err.println("Connection Failed");
+	    	System.err.println("Connection Failed");
 	    }
 	    p.insertIntoItemCur(conn, itemNbrs);
 	    
